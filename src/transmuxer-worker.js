@@ -290,6 +290,10 @@ class MessageHandlers {
     this.transmuxer.reset();
   }
 
+  setAudioAppendStart(data) {
+    this.transmuxer.setAudioAppendStart(data.appendStart);
+  }
+
   /**
    * Set the value that will be used as the `baseMediaDecodeTime` time for the
    * next segment pushed in. Subsequent segments will have their `baseMediaDecodeTime`
