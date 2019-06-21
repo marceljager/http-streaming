@@ -303,8 +303,8 @@ class MessageHandlers {
     this.transmuxer.setBaseMediaDecodeTime(Math.round(secondsToVideoTs(timestampOffset)));
   }
 
-  setAudioAppendStart(data) {
-    this.transmuxer.setAudioAppendStart(Math.ceil(secondsToVideoTs(data.appendStart)));
+  setRemux(data) {
+    this.transmuxer.setRemux(data.remux);
   }
 
   /**
